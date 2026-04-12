@@ -28,5 +28,6 @@ const accountSchema = new mongoose.Schema({
 
 accountSchema.index({ user: 1, status: 1 });
 
+// Create the Account model
 const accountModel = mongoose.model('Account', accountSchema);
 module.exports = accountModel;
